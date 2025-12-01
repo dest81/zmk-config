@@ -49,12 +49,11 @@
             // encoder-buttons = <&kp C_MUTE>;
         };
 
-        // Encoder 0
-        encoder0: encoder {
+        encoder: encoder {
             compatible = "zmk,rotary-encoder";
-            label = "ENCODER0";
-            pin_a = <&gpio0 28 GPIO_ACTIVE_HIGH>;
-            pin_b = <&gpio0 29 GPIO_ACTIVE_HIGH>;
+            label = "ENCODER_RIGHT";
+            pin_a = <&gpio1 02 GPIO_ACTIVE_HIGH>;
+            pin_b = <&gpio1 03 GPIO_ACTIVE_HIGH>;
             #binding-cells = <2>;
 
             sensor-bindings = <&inc_dec_kp C_VOL_UP C_VOL_DN>;
