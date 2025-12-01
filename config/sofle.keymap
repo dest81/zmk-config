@@ -45,7 +45,9 @@
                  &kp LCTRL &kp LALT &kp LGUI  &mo LOWER  &kp RET    &kp SPACE  &mo RAISE  &kp RGUI &kp RALT  &kp RCTRL
             >;
 
-            sensor-bindings = <&inc_dec_kp C_VOL_UP C_VOL_DN &inc_dec_kp PG_UP PG_DN>;
+            //sensor-bindings = <&inc_dec_kp C_VOL_UP C_VOL_DN &inc_dec_kp PG_UP PG_DN>;
+            sensor-bindings = <&inc_dec_kp C_VOL_UP C_VOL_DN>;
+            encoder-buttons = <&kp C_MUTE>;
         };
 
         lower_layer {
@@ -65,7 +67,7 @@
                     &trans    &trans      &trans    &trans     &trans &trans  &trans    &trans   &trans    &trans
             >;
 
-            sensor-bindings = <&inc_dec_kp C_VOL_UP C_VOL_DN &inc_dec_kp PG_UP PG_DN>;
+            sensor-bindings = <&inc_dec_kp PG_UP PG_DN>;
         };
 
         raise_layer {
