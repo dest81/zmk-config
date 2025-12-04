@@ -26,6 +26,20 @@
         };
     };
 
+    behaviors {
+        td_raise: td_raise {
+            compatible = "zmk,behavior-tap-dance";
+            #binding-cells = <0>;
+
+            bindings = <
+                &mo RAISE   /* single tap or press/hold = momentary RAISE */
+                &tg RAISE   /* double tap = toggle RAISE */
+            >;
+
+            hold-trigger-ms = <200>;   /* adjust as needed */
+        };
+    };
+
     keymap {
         compatible = "zmk,keymap";
 
