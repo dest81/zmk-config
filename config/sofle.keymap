@@ -35,8 +35,6 @@
                 &mo RAISE   /* single tap or press/hold = momentary RAISE */
                 &tog RAISE   /* double tap = toggle RAISE */
             >;
-
-            hold-trigger-ms = <200>;   /* adjust as needed */
         };
     };
 
